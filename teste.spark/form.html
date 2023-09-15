@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h1>Inserir Jogos</h1>
+    <form action="http://localhost:6789/produto/insert" method="post">
+		<label for="nome">ID:</label>
+        <input type="number" id="id" name="id" required>
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="preco">Preco</label>
+        <input type="number" id="preco" name="preco" required>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <section class="section--row__responsive">
+			<h1 class="generaltext">Listar produtos</h1>
+			<LISTAR-PRODUTO>
+			<form action="http://localhost:6789/produto/list/1"  method="get" id="form-all">
+			    <br><br><br>
+				<input type="submit" value="Listar Todos" class="input--consult__style input--button">
+				
+			</form>
+		</section>
+	</section>
+</body>
+</html>
